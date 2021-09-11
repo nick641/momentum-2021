@@ -1,10 +1,10 @@
 const greeting = document.querySelector("#greeting");
-
+const loginForm = document.querySelector("#login-form");
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
 function onLoginSubmit(event) {
-  event.preventDefault();
+  event.preventdefault();
   loginForm.classList.add(HIDDEN_CLASSNAME);
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
